@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+	<title>Formularios en html</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type"text/css" href="css/styles.css">
+</head>
+<body>
+	<form action="a_donde_me_dirijo.html" method="post|get">
+		<div>
+			<label>Name: *</label>
+			<input type="text" name="nombre" placeholder="Last, First" required>
+		</div>
+		<div>
+			<label>Company Name</label>
+			<input type="text" name="company">
+		</div>
+		<div>
+			<label>Email: *</label>
+			<input type="email" name="correo" required>
+		</div>
+		
+		<div>
+			<label>Contraseña:</label>
+			<input type="password" name="contra">
+		</div>
+		<div>
+			<label>Teléfono:</label>
+			<input type="phone" name="telefono">
+		</div>
+		<div>
+			<label>Fecha:</label>
+			<input type="date" name="fecha">
+		</div>
+		
+		<div class="request">
+			<label>Request Type</label><br>
+			<input type="radio" name="requestRadio" value="Question">
+			Question<br>
+			<input type="radio" name="requestRadio" value="Comment">
+			Comment
+		</div>
+		<div>
+			<label>Comment:</label>
+			<textarea name="comment"></textarea>
+			<br><br>
+			<input type="checkbox" name="check" value="1">
+			Subscribe to our mailing list?<br>
+		</div>
+		
+		<div>
+			<br>How did you hear about us?<br>
+			<select name="typeRequest" class="alinear">
+				<option>Choose...</option>
+				<option>A friend</option>
+				<option>Facebook</option>
+				<option>Twitter</option>
+			</select>
+		</div>
+		<input type="submit" name="boton" value="registrar">
+	</form>
+</body>
+</html>

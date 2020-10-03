@@ -1,0 +1,93 @@
+/* Estilos generales */
+a{
+	text-decoration: none;
+}
+h2{
+	font-family: arial;
+	text-align: center;
+}
+td, tr, th{
+	font-family: arial;
+	border: 1px outset #1C6EA4;
+	border-radius: 8px;
+}
+
+/* Estilos más específicos */
+th {
+	color:white;
+	background-color: #0078a7;
+}
+td{
+	background-color: #e8e8e8:
+}
+
+/* Estilos propios (Clases) */
+
+.horas {
+	text-align: center;
+	color: white;
+	background-color: #80aeab;
+}
+.img{
+	width:20px;
+	background-color:white;
+	border-radius: 10%;
+	border: 0px outset #1C6EA4;
+}
+.cabecera{
+	background-color:#0474a5;
+	width: 100%;
+	border: 1px;
+}
+.universidad{
+	text-shadow: 2px 2px 2px #1B28CE;
+	font-size: 24px;
+	text-align: center;
+	font-family: arial;
+	color:white;
+	border: 0px outset #1C6EA4;
+}
+.formulacion{
+	color: green;
+	font-size: 16px;
+}
+.lenguajes{
+	color: #00AACC;
+	font-size: 16px;
+}
+.ingles{
+	color: red;
+	font-size: 16px;
+}
+.interfaces{
+	color: purple;
+	font-size: 16px;
+}
+.requisitos{
+	color: orange;
+	font-size: 16px;
+}
+.liderazgo{
+	color: lime;
+	font-size: 16px;
+}
+.web{
+	color: blue;
+	font-size: 16px;
+}
+.docente{
+	font-size: 13px;
+}
+.clave{
+	font-size: 10px;
+}
+.pie, .pie td tr{
+	align-items:center;
+	 border: 0px;
+	 border-radius:0;
+	 background-color: #7a99c7;
+	 color:blue;
+	 text-align: center;
+	 text-bottom:center;
+	 
+}

@@ -1,0 +1,74 @@
+body{
+	width: 1200px;
+	margin: auto;
+	background-color: #2E446C;
+}
+p {
+	text-align: justify;
+	font-family: arial;
+}
+
+dt{
+	font-size: 20px;
+	font-family: arial;
+	color:#06235F;
+	font-weight: bold;
+}
+#banner{
+	width:100%;
+	height: 150px;
+}
+#pie, #pie td tr{
+	 border: 0px;
+	 border-radius:0;
+	 background-color: #7a99c7;
+	 color:blue;
+	 text-align: center;
+	 text-bottom:center;
+	 
+}
+.pie a, .menu a{
+	text-decoration: none;
+	color: white;
+}
+.menu table{
+	background-color: #0474a5;
+	border: 1px outset #1C6EA4;
+	border-radius: 5px;
+}
+.menu td, .menu tr, .menu th{
+	text-align: center;
+	color: white;
+	width: 150px;
+	border: 1px outset #1C6EA4;
+	border-radius: 5px;
+	font-family: arial;
+	
+}
+.titulo{
+	text-shadow: 2px 2px 2px #055778;
+	font-size: 35px;
+	font-family: arial;
+	color:#0CA5E3;
+	border: 0px outset #10B2F3;
+}
+.subTitulo1{
+	font-size: 25px;
+	font-family: arial;
+	color:#1051D4;
+}
+.contenido{
+	background-color: white;
+	padding: 20px;
+}
+.subContenido{
+	width: 1100px;
+}
+.moviles{
+	display: flex;
+	margin: 10px;
+}
+.moviles img{
+	margin-right: 20px;
+	margin-left: 20px;
+}

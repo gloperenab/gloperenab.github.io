@@ -1,0 +1,24 @@
+div {
+	width: 100%;
+	margin-bottom:7px;
+}
+label{
+	display:inline-block;
+	width: 10%;
+}
+.request label {
+	margin-top:3px;
+	display:inline-block;
+	margin-left: 10%;
+}
+.request input {
+	display:inline-block;
+	margin-left: 10%;
+}
+textarea {
+	-webkit-writing-mode: horizontal-tb !important;
+	 flex-direction: column;
+}
+.alinear {
+	margin-left: 10%;
+}

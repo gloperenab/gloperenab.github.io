@@ -1,0 +1,41 @@
+*{
+	font-family:Arial;
+}
+body{
+	width: 600px;
+	background-color: #40434e;
+	margin: auto;
+}
+body *{
+	margin: 10px;
+}
+.principal{
+	display: flex;
+}
+.contenido{
+	background-color: white;
+}
+header{
+	background-color: #080705;
+	color: #FFFFFF;
+}
+nav{
+	background-color: #702632;
+}
+main{
+	background-color: #7F95D1;
+	width: 70%;
+}
+section{
+	background-color: #FF82A9;
+}
+aside{
+	background-color: #912F40;
+	width: 30%;
+}
+article{
+	background-color: #FF82A9;
+}
+footer{
+	background-color: #BFCAE6;
+}

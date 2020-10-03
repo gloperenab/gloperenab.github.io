@@ -1,0 +1,50 @@
+h2{
+	font-family: arial;
+	color: salmon;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+}
+p{
+	font-family: arial;
+}
+a{
+	color: orange;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 50px;
+}
+ul{
+	color: lime;
+}
+ol{
+	color: salmon;
+}
+dl{
+	color:blue;
+}
+/*punto=clase*/
+.titulos-principales{
+	font-size: 40px;
+	color: blue;
+	border: dashed;
+	border-color: blue;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.subtitulos{
+	font-family: Calibri;
+	font-size: 30px;
+	color: salmon;
+	border-color: blue;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+/* Por un ID */
+#agenda, #agenda tr td, #agenda th{
+	border: solid;
+	border-color: red;
+	border-radius: 10%;
+}

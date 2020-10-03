@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>IMC</title>
+	
+	<script type="text/javascript">
+		document.write("<h1>Cálculo del IMC</h1>");
+		
+		var peso=prompt("Introduce peso (kg): ");
+		var altura=prompt("Introduce altura (m): ");
+		var imc=peso/((altura)*altura);
+		document.write("Su IMC: "+peso);
+		document.write("<br>Valoracion: ");
+		if(imc<=18.5){
+		document.write("Infrapeso");
+		} else {
+			if(imc>18.8&&imc<=24.9){
+				document.write("Peso normal");
+			} else {
+				if(imc>=25&imc<=29.9){
+					document.write("Sobrepeso");
+				} else {
+					if(imc>=30&imc<=34.9){
+						document.write("Obesidad");
+					} else {
+					document.write("Obesidad Morbida");
+					}
+				}
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

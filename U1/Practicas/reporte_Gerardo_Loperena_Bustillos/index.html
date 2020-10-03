@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+<head>
+	<title>Introducción a los elementos semánticos</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="Imagenes/icono.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="contenido" id="contenido">
+		<header>
+			<div class="foto">
+				<img src="Imagenes/foto.jpeg" id="foto">
+			</div>
+			<div class="informacion">
+				<!--Datos personales -->
+				<font class="tituloReporte" size="6px">Reporte de Estancias I</font><br>
+				<dl>
+					<dt>Alumno: Gerardo Loperena Bustillos</dt>
+					<dt>Matrícula: 1830472</dt>
+					<dt>Carrera: Ingeniería en Tecnologías de la Información</dt>
+				</dl>
+			</div>
+		</header>
+		<nav>
+			<center>
+				<table class="menu">
+					<tr>
+						<td><a href="index.html" id="cambioColor">Inicio</a></td>
+						<td><a href="#resumen" id="cambioColor">Resumen</a></td>
+						<td><a href="#abstract" id="cambioColor">Abstract</a></td>
+						<td><a href="#introduccion" id="cambioColor">Introducción</a></td>
+						<td><a href="#justificacion" id="cambioColor">Justificación</a></td>
+						<td><a href="#objetivos" id="cambioColor">Objetivos</a></td>
+						<td><a href="#desarrollo" id="cambioColor">Desarrollo</a></td>
+						<td><a href="#resultados" id="cambioColor">Resultados</a></td>
+						<td><a href="#conclusiones" id="cambioColor">Conclusiones</a></td>
+						<td><a href="pagina2.html" id="cambioColor">Equipo</a></td>
+					</tr>
+				</table>
+			</center>
+		</nav>
+		<div class="principal">
+			<main>
+				<br>
+				<section id="principal">
+					<p class="tituloPrincipal">
+						Proyecto: Implementación del Sistema de Administración, Control 
+						y Repositorio de la plataforma CAPASITI.
+					</p><br><br>
+				</section>
+				
+				<section id="resumen">
+					<p class="titulos">Resumen</p>
+					<p>
+						En este proyecto se realizó la implementación del sistema gestor de inscripciones en el
+						sitio web Capasiti. Durante el desarrollo del proyecto, se realizaron varios cambios tanto a
+						la base de datos de la página como a misma página web mediante distintos softwares
+						tales como Wamp Server, MySQL, el framework Cake PHP, entre otras. Los cambios se
+						realizaron primeramente de manera local, para posteriormente ser implementados en el
+						servidor web en línea. Los resultados fueron los esperados, logrando así la finalización del
+						proyecto de manera satisfactoria. En el presente reporte se presentarán de manera más
+						desarrollada cada una de las actividades que nos llevaron a este resultado.
+					</p><br>
+				</section>
+				
+				<section id="abstract">
+					<p class="titulos">Abstract</p>
+					<p>
+						In this project the implementation of the registration management system was carried out
+						on the Capasiti website. During the development of the project, several changes were
+						made both to the database of the page and to the same web page through different
+						softwares such as Wamp Server, MySQL, the Cake PHP framework, among others. The
+						changes were made first locally, to be later implemented in the online web server. The
+						results were as expected, thus achieving the completion of the project satisfactorily. In this
+						report, each of the activities that led to this result will be presented in a more developed
+						way.
+					</p><br>
+				</section>
+				
+				<section id="introduccion">
+					<p class="titulos">Introducción</p>
+					<p>
+						El objetivo de este proyecto es poder desarrollar un sistema gestor de inscripciones el
+						cual sea funcional y que, a su vez, se encuentre en línea por medio del servidor web
+						Capasiti.<br><br>
+						El proyecto Implementación de sistema de administración, control y repositorio de la
+						plataforma Capasiti se realizará en la Subsecretaría de Innovación y Tecnologías de
+						la Información, instancia que articula y administra la tecnología que se emplea en las
+						dependencias y organismos descentralizados del Gobierno del Estado de Tamaulipas,
+						a través de la atención a los diversos usuarios de Tecnologías de la Información, con
+						servicios tecnológicos y liderazgo en el desarrollo de proyectos institucionales,
+						utilizando Infraestructura y Telecomunicaciones, Diseño de Soluciones y Sistemas de
+						Movilidad e Informática.
+
+					</p><br>
+				</section>
+				
+				<section id="justificacion">
+					<p class="titulos">Justificación</p>
+					<p>
+						El proyecto se realizará con el fin de implementar el sistema gestor de inscripciones en
+						línea en la plataforma Capasiti para que usuarios puedan registrarse a cualquiera de los
+						cursos que están disponibles. Se corregirán problemas en la página web y en la base de
+						datos de la misma para que pueda funcionar de manera correcta en el servidor web.
+					</p><br>
+				</section>
+				
+				<section id="objetivos">
+					<p class="titulos">Objetivos</p>
+					<p>
+							Se tienen como objetivos: corregir los errores encontrados en la página web y en la base
+							de datos, la implementación de la página web y la base de datos en el servidor Capasiti,
+							la realización de la prueba de calidad como testeo final del proyecto y la revisión final del
+							proyecto con el asesor empresarial para su aprobación.	
+					</p><br>
+				</section>
+				
+				<section id="desarrollo">
+					<p class="titulos">Desarrollo</p>
+					<dl class="desarrolloContenido">
+					
+						<dt>Herramientas Utilizadas</dt><br>
+						<dd>
+							<ol>
+								<li>WampServer</li>
+								<p>Se trata de un servidor cuyas principales características son su funcionalidad con la base
+										de datos de MySQL, el uso de apache, y su uso con el lenguaje PHP, debido a los puntos
+										anteriores y a su fácil implementación fue elegido para poder desarrollar la practica
+										requerida.<br><br>
+										Para la instalación de Wampserver es necesario contar con los instaladores, estos
+										pueden ser encontrados en su página oficial en http://www.wampserver.com/en/, en la
+										sección de descargas
+										<br>
+										<center><img src="Imagenes/wamp.png" width="310" height="150"></center>
+								</p>
+								<li>MySQL</li>
+								<p>MySQL es un software creado por la empresa sueca MySQL AB por David Axmark, Allan
+										Larsson y Michael Widenius. Su lenguaje de programación se trata de Structured Query
+										Lenguaje(SQL) desarrollado en 1981 por IBM. Como muchos otros sistemas de gestión
+										MySQL cuenta con elementos que apoyan al mantenimiento y uso de las bases de datos,
+										tales como datos relacionales, integridad referencial y transacciones.<br><br>
+										Para instalar MySQL se deberá ingresar a su página oficial encontrada en la siguiente
+										URL https://www.mysql.com/products/workbench/. 
+										<br>
+										<center><img src="Imagenes/mysql.png" width="320" height="150"></center>
+								</p>
+								<li>FileZilla</li>
+								<p>Es una aplicación desarrollada en 2001 por Tim Koose, tiene la funcionalidad de
+										descargar páginas web de su respectivo servidor, siempre y cuando se cuente con la
+										información de esta misma. Para el desarrollo de las estancias fue indispensable debido a
+										que se requería descargar todos los paquetes de un servidor a partir del cual se
+										realizarían cambios y se vería como es su comportamiento.<br><br>
+										De igual manera para su descarga se tendrá que ingresar al sitio oficial de FileZilla
+										https://filezilla-project.org/ y se descargará FileZilla como cliente. 
+										<br>
+										<center><img src="Imagenes/file.jpg" width="420" height="150"></center>
+								</p>
+								<li>Atom</li>
+								<p>Se trata de un editor de texto, el cual funciona para varios tipos de equipos. Fue creado
+										por GitHub el 26 de febrero de 2014.<br><br>
+										Para su descarga se ingresará al sitio oficial de Atom usando la siguiente URL
+										https://atom.io/ y se buscará la opción de descarga. Esto comenzara con la descarga del
+										instalador. Así se conseguirá un ejecutable exe, el cuál una vez abierto mostrará la
+										siguiente ventana.
+										<br>
+										<center><img src="Imagenes/atom.png" width="220" height="150"></center>
+								</p>
+							</ol>
+						</dd>
+						<br><br>	
+						<dt>Desarrollo de actividades</dt><br>
+							<ol>
+								<li>Descarga y solución de errores</li>
+								<p>
+									El primer paso para comenzar con la práctica, se accedió a una carpeta con la cuál
+									acceder de manera local a la página que se deseaba modificar, esta fue ingresada como
+									se mostró anteriormente a la carpeta www de wamp, sin embargo, se encontró que al
+									momento de querer acceder de manera local se redirigía de manera automática a otra
+									red.<br><br>
+									Esto se debe a que la versión de PHP que se estaba usando era la 5 y la usada en la
+									base era la 7, por lo cual se tuvo que cambiar para poder acceder, para cambiar la versión
+									de PHP en Wamp accedemos a su ventana, en PHP->versions y se buscó la necesaria.
+									Al completarse el cambio y se volvió a abrir. Esta labor se consiguió gracias al apoyo de la
+									ing. María Delgado y el ing. Oscar Lizardo.<br><br>
+									Después de esto, haciendo uso de FileZilla, se descargaron los archivos que se
+									encontraban en el servidor. Pero antes de esto se necesitó conectar a través de la red IP
+									del usuario para que se le cedieran los permisos para poder editar el servidor
+									capasiti.tamaulipas.gob.mx pasando por primera instancia conectarse a la IP de la Torre
+									Bicentenario para poder acceder a dicho servidor.<br>
+										
+								</p>
+								<center><img src="Imagenes/img1.png" width="410" height="250"></center><br><br>
+								<li>Pruebas con los cambios</li>
+								<p>
+								Ahora, con las nuevas actualizaciones, subidas utilizando nuevamente FileZilla, se
+								realizaron algunas pruebas con personas ajenas al proyecto, esto con el fin de observar
+								que tan didáctica es la página y lograr conseguir cualquier otro error que pueda surgir y
+								que el equipo no haya encontrado con anterioridad.<br><br>
+								Se generaron 3 cuentas, todas estas son del tipo de usuario maestro, con esto, se
+								crearon 4 cursos calendarizados, cada uno con un tipo de modalidad diferente, esta
+								prueba fue gracias a los compañeros Alejandro Lumbreras, Jonathan Juárez y Osvaldo
+								Pérez.<br>
+								</p>
+								<center><img src="Imagenes/img2.png" width="410" height="250"></center><br><br>
+
+								<li>Implementación de la plataforma en el nuevo servidor</li>
+								<p>
+								Una vez con estas actividades terminadas fue requerida una prueba de manera completa,
+								es decir, que se realice todas las actividades que comúnmente serian llevadas a cabo
+								para realizar un curso, tal es el caso de inscripción, selección y la resolución del curso en
+								cuestión. Para ello fue facilitado un servidor el cual serviría para entorno de estas
+								pruebas, si bien ya se contaba anteriormente con un servidor, este último fue retirado
+								debido a cuestiones de carácter superior.<br><br>
+								Antes de continuar, primeramente, fue necesario hacer un respaldo del servidor que será
+								retirado, esto con el fin de tener un seguro en caso de que alguna de las pruebas falle.
+								Una vez que todo esto termine, será subido al nuevo servidor los archivos de la página
+								modificada, todo esto siendo llevado a cabo gracias a la aplicación de FileZilla.
+								</p>
+								<center><img src="Imagenes/img3.png" width="460" height="250"></center><br>
+								<br>
+								
+								<li>Errores al subir la página y últimos detalles</li>
+								<p>
+								Terminando todo lo anterior apareció un error que antes ya se había encontrado y
+								solucionado. Como se mencionó
+								anteriormente, este error era debido a que la base de datos y la versión del Framework
+								eran distintas. Para solucionar esto fue necesario requerir la ayuda del asesor, el Lic. José
+								Luis Cabrales Sáenz, el cual permitió la modificación del servidor cambiando su versión
+								de PHP a la 5, cuando originalmente se encontraba en la 7.<br><br>
+								Se solicitó al equipo la integración de algunos datos, estos son las claves de trabajo y el
+								nombre de la dependencia. Para esto se facilitó una hoja de Excel la cual contaba con
+								esta información.
+								</p>
+								<center><img src="Imagenes/img4.png" width="460" height="200"></center><br>
+							
+								
+							</ol>
+					</dl>
+					<br>
+				</section>
+				
+				<section id="resultados">
+					<p class="titulos">Resultados</p>
+					<p>
+						Tras la finalización del proyecto, se tuvo como resultado la correcta funcionalidad de la
+						página web una vez fue implementada en el servidor Capasiti. La prueba de calidad fue
+						finalizada con éxito, mostrando así que, por lo menos, las funciones básicas de la página
+						funcionaban correctamente.
+					</p><br>
+				</section>
+				
+				<section id="conclusiones">
+					<p class="titulos">Conclusiones</p>
+					<p>
+						Al finalizar el proyecto, se obtuvieron resultados satisfactorios conforme a los objetivos y
+						planes establecidos al inicio del proyecto. Los errores encontrados en la página web y en
+						la base de datos de la misma fueron solucionados, logrando así montar la página web en
+						tres, dos de ellos los cuales fueron utilizados para la realización de pruebas y el otro era
+						el servidor principal. Durante el desarrollo de este proyecto, fue necesario comprar un
+						host para tener un servidor de pruebas nuevo, ya que, el que había sido proporcionado
+						originalmente (Por problemas de almacenamiento en la empresa), iba a ser eliminado
+						tiempo después; por lo que se migraron los datos del servidor de pruebas antiguo (Siec) al
+						nuevo.
+						Este proyecto aportó a la empresa un sistema funcional el cual antes no podía ser
+						utilizado debido a las fallas que presentaba, de igual manera, se implementaron nuevas
+						funciones con las cuales no contaba.
+						Los aprendizajes que se obtuvieron gracias al desarrollo de este proyecto fueron varios,
+						entre los que se destacan: programación de base de datos, programación con php,
+						programación con cake php y migración de páginas web entre servidores. Este proyecto
+						trajo consigo un gran conocimiento académico, profesional y empresarial.
+					</p><br>
+				</section>
+				<div id="regresar">
+					<a href="#contenido"><img src="Imagenes/regresar.png" width="220" height="40"></a>
+				</div>
+			</main>
+			
+			<aside>
+				<h3>Enlaces de referencia</h3><br>
+				<article class="lista">
+					<h4>Herramientas utilizadas</h4>
+					<ul>
+						<li><a href="http://www.wampserver.com/en/" target="_blank">WampServer</a></li>
+						<li><a href="https://www.mysql.com/products/workbench/" target="_blank">MySQL</a></li>
+						<li><a href="https://filezilla-project.org/" target="_blank">FileZilla</a></li>
+						<li><a href="https://atom.io/" target="_blank">Atom</a></li>
+					</ul>
+					<br>
+					<h4>Artículos Recomendados</h4>
+					<ul>
+						<li><a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://lsi.ugr.es/curena/doce/lp/tr-11-12/lp-c01-impr.pdf&ved=2ahUKEwiGkfetpu7mAhVNb60KHcK8COQQFjABegQIBhAB&usg=AOvVaw2rlMSzL85eVVT3zkNYMAB-&cshid=1578291173884" target="_blank">Lenguajes de programación. Carlos Ureña Almagro, (2011).</a></li>
+						<li><a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://readthedocs.org/projects/programacion-php/downloads/pdf/latest/&ved=2ahUKEwjX173iqe7mAhUKbKwKHYjFCCoQFjAAegQIBRAB&usg=AOvVaw3kYhV0W4Fk2aBaigX33qw7" target="_blank">Programación PHP. Armando Arce (2018). </a></li>
+						<li><a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://book.cakephp.org/3/_downloads/en/CakePHPCookbook.pdf&ved=2ahUKEwi-o-bGqu7mAhVMSq0KHRsiDOYQFjABegQICBAC&usg=AOvVaw17aOwmLoH96w_Za7nneCFt" target="_blank">Cake Software Fundation (2020) Versión 3.8</a></li>
+						<li><a href="https://www.lawebdelprogramador.com/pdf/81ef9e5b2e7287f93637312957f56dd9/17353/descargar.php" target="_blank">Lorena Bernis (2018). Servidores web. ¿Qué es un servidor web? Tipos de servidores. </a></li>
+						
+					</ul>
+				</article>
+			</aside>
+		</div>
+		<footer class="menu">
+			<center>
+			<table>
+				<tr>
+					<td>Copyright 2020 - Gerardo Loperena Bustillos </td>
+					<td>
+						<a href="https://www.facebook.com/loperena.its.god"  target="_blank"><img src="Imagenes/fb.png" width="25" high="25"></a>
+					</td>
+					<td>
+						<a href="https://www.facebook.com/loperena.its.god"  target="_blank" id="cambioColor">Gerardo Loperena</a>
+					</td>
+					<td>
+						<a href="https://www.youtube.com/channel/UCqzjI0X3zZqpwzbo8rPRQDA"  target="_blank"><img src="Imagenes/yt.png" width="25" high="25"></a>
+					</td>
+					<td>
+						<a href="https://www.youtube.com/channel/UCqzjI0X3zZqpwzbo8rPRQDA"  target="_blank" id="cambioColor">Gerardo LB</a>
+					</td>
+				</tr>
+			</table>
+			<center>
+		</footer>
+	</div>
+</body>
+</html>
