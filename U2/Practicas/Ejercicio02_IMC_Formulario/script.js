@@ -1,8 +1,11 @@
  function calcularIMC(){
+	 
    var imcResultado = document.getElementById("imcResultado");
    var valoracion= document.getElementById("valoracion");
+   
    var peso = document.getElementById("peso").value;
    var altura = document.getElementById("altura").value;
+   
    var val;
    var imc = peso/(altura * altura);
    
@@ -23,6 +26,9 @@
 			}
 		}
 	}
+	imc=imc*100;
+	imc=Math.round(imc);
+	imc=imc/100;
 	 imcResultado.innerHTML = "<h4>IMC</h4>" + imc;
 	 valoracion.innerHTML= "<br><h4>Valoración</h4>" + val;
   }
