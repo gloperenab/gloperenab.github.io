@@ -64,11 +64,9 @@ main{
 	float: left;
 	width: 70%;
 }
+
 main h2{
 	border-bottom:1px solid;
-}
-#img img{
-	width:150px;
 }
 aside{
 	background-color:white;
