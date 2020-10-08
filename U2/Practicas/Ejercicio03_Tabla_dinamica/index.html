@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	 <title>Ejercicio 3</title>
+	 <title>Tabla dinámica con JS</title>
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" type"text/css" href="css/styles.css">
 </head>
@@ -12,7 +12,7 @@
 			<div class="cabecera">
 				<img src="Imagenes/js.jpg">
 				<div>
-					<h3>Unidad 2: Ejercicio 03 | </h3><br>
+					<h3>Unidad 2: Ejercicio 03 | Tabla con elementos dinámicos</h3><br>
 					<p>
 						Alumno: Gerardo Loperena Bustillos<br>
 						Carrera: Ingeniería en Tecnologías de la Información<br>
@@ -34,11 +34,30 @@
 		<div class="contenido">
 			<main>
 				<section>
-					<h1>Título</h1>
+					<div class="formulario">
+						<h1>Generar tabla dinámica con JS</h1>
 
+						 <!--<form action="#">-->
+						 <input type="number" id="numero" placeholder="Numero"><br><br>
+						 <input type="number" id="multiplicador" placeholder="Cantidad Resultados"><br><br><br>
+						 <button onclick="tabla()" class="boton_calcular">Generar</button>
+						 <button onclick="limpiar()" class="boton_limpiar">Limpiar</button>
+						 <br><br>
+						 
+						 <div id="tablaDiv">
+							
+						 </div>
+						
+						 <!-- </form> -->
+					</div>
+					
+					
 				</section>
 			</main>
 			<aside>
+				<section>
+				
+				</section>
 			</aside>
 		</div><!-- fin contenido-->
 		

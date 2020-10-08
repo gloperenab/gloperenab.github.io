@@ -24,7 +24,7 @@ a:hover, nav a:hover{
 .contenido{
 	display: flex;
 	margin-bottom:-18px;
-	height:500px;
+	height:900px;
 }
 .cabecera{
 	display: flex;
@@ -64,9 +64,11 @@ main{
 	float: left;
 	width: 70%;
 }
-
 main h2{
 	border-bottom:1px solid;
+}
+#img img{
+	width:150px;
 }
 aside{
 	background-color:white;
@@ -80,4 +82,40 @@ footer{
 	background-color:#024a59;
 	align-items:center;
 	color:white;
+}
+.boton_calcular{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+.boton_calcular:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+.boton_limpiar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #0bbd4f;
+    border-radius: 6px;
+    border: 2px solid #03401a;
+}
+.boton_limpiar:hover{
+    color: #0bbd4f;
+    background-color: #ffffff;
+}
+
+.cabeceraTabla{
+	background-color:#4c2882;
+	color:white;
+}
+.cabeceraTabla2{
+	background-color:#b28deb;
 }
