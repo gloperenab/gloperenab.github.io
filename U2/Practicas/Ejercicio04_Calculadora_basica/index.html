@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <title>Calculadora Básica JS</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type"text/css" href="css/styles.css">
+</head>
+<body  oncontextmenu="return false">
+	<div class="principal">
+		<nav>
+			<div class="cabecera">
+				<img src="Imagenes/js.jpg">
+				<div>
+					<h3>Unidad 2: Ejercicio 04 | Calculadora básica con Java Script</h3><br>
+					<p>
+						Alumno: Gerardo Loperena Bustillos<br>
+						Carrera: Ingeniería en Tecnologías de la Información<br>
+						E-Mail: 1830472@upv.edu.mx
+					</p>
+				</div>
+				
+			</div>
+			<center>
+			<table>
+				<tr>
+					<td><a href="#">Inicio</a></td>
+					<td><a href="..\..\..\index.html">Regresar a página principal</a></td>
+				</tr>
+			</table>
+			</center>
+		</nav><!-- fin -->
+		
+		<div class="contenido">
+			<main>
+				<section>
+					<center>
+					<h1>Calculadora básica con Java Script</h1><br><br>
+					
+					<div class="calculadora">
+						<input type="text" id="salidaPrevia" class="salida" value="" disabled="true" style="color: gray; font-size:14px; height:25px;">
+						<input type="text" id="salida" class="salida" value="0" disabled="true"><br><br><br>
+						
+						 <button class="num" onclick="limpiarTodo()" style="margin-left:220px; margin-right:0px">C/A</button><br>
+						 <button class="num" onclick="uno()">1</button>
+						 <button class="num" onclick="dos()">2</button>
+						 <button class="num" onclick="tres()">3</button>
+						 <button class="operadores" onclick="division()" style="margin-right:0px">/</button><br>
+						 
+						 <button class="num" onclick="cuatro()">4</button>
+						 <button class="num" onclick="cinco()">5</button>
+						 <button class="num" onclick="seis()">6</button>
+						 <button class="operadores" onclick="multiplicacion()" style="margin-right:0px">*</button><br>
+						 
+						 <button class="num" onclick="siete()">7</button>
+						 <button class="num" onclick="ocho()">8</button>
+						 <button class="num" onclick="nueve()">9</button>
+						 <button class="operadores" onclick="resta()" style="margin-right:0px">-</button><br>
+						 
+						 <button class="num0" onclick="cero()">0</button>
+						 <button class="operadores" onclick="suma()" style="margin-right:0px">+</button><br>
+					
+						<button class="igual" id="igual" onclick="igual()" style="margin-left:140px; margin-right:0px">=</button>
+					</div>
+					</center>
+				</section>
+			</main>
+			
+		</div><!-- fin contenido-->
+		
+		<footer>
+			<center><p>@Todos los derechos reservados</p></center>
+		</footer>
+	</div>
+</body>
+</html>
