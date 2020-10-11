@@ -32,17 +32,17 @@ nav ul li:hover{
 nav>img{
 	height:50%;
 	margin-left:20px;
-	margin-right:50%;
+	margin-right:45%;
 }
 .sesionIniciada>img{
 	height:50%;
 	margin-left:20px;
-	margin-right:27%;
+	margin-right:23%;
 
 }
 .notificaciones img{
 	height:30px;
-	margin-left:15px;
+	margin-left:10px;
 }
 .notificaciones  a, .notificaciones a:visited{
 	color:yellow;
