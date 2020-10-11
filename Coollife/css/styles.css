@@ -1,0 +1,383 @@
+*{
+	font-family: sans-serif;
+}
+/* Menu */
+nav{
+	background-color: rgb(43, 56, 64);
+	height:60px;
+	width:100%;
+	align-items: center;
+	display: flex;
+}
+nav ul{
+	height: 100%;
+	align-items: center;
+	display: flex;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+nav ul li:hover{
+	height: 100%;
+	align-items: center;
+	display: flex;
+}
+nav>img{
+	height:50%;
+	margin-left:20px;
+	margin-right:50%;
+}
+.sesionIniciada>img{
+	height:50%;
+	margin-left:20px;
+	margin-right:27%;
+
+}
+.notificaciones img{
+	height:30px;
+	margin-left:15px;
+}
+.notificaciones  a, .notificaciones a:visited{
+	color:yellow;
+	font-weight:bold;
+	text-decoration:none;
+}
+#tops{
+	border:1px solid;
+	border-radius:5px;
+	margin-left:40px;
+}
+
+
+/* Main */
+.login{
+	display:flex;
+	height:625px;
+}
+.info{
+	padding:30px;
+	width:50%;
+	background-color:rgb(130, 4, 52);
+	padding-top:10%;
+	padding-bottom:5%;
+	vertical-align: center;
+}
+.info img{
+	width:200px;
+}
+.info p{
+	padding-left:50px;
+	font-weight:bold;
+	color:white;
+	font-style:italic;
+}
+.inicio{
+	width:50%;
+	padding-top:10%;
+	text-align: center;
+}
+.register{
+	width:50%;
+	padding-top:1%;
+	text-align: center;
+}
+.inicio h1, .register h1{
+	font-style: italic;
+}
+.inicio input, .register input{
+	height:25px;
+	width:300px;
+	margin-left:30px;
+}
+.inicio button, .register button{
+	height:30px;
+	width: 100px;
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+}
+.boton{
+	height:30px;
+	width: 100px;
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+}
+.inicio p, .register p{
+	color: rgb(95,95,95);
+	font-size:16px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.inicio a .register a{
+	color: rgb(0,64,128);
+	font-style:italic;
+}
+.inicio img, .register form>img{
+	height:30px;
+	position:absolute;
+}
+.captcha{
+	display:inline-block;
+	text-align:center;
+	width:200px;
+}
+.contenido{
+	display:flex;
+}
+
+
+/* Menu desplazamiento */
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed; 
+    z-index: 1px;
+    top: 100;
+    left: 10;
+    background-color: rgb(130, 4, 52);
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.25s; 
+}
+ 
+/* The navigation menu links */
+.sidenav>a, .sidenavSub a{
+    padding: 8px 8px 8px 18px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffff;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav p {
+	text-align: right; 
+	margin-right:50px;
+	margin-top:5px;
+    font-size: 22px;
+    color: #ffff;
+	vertical-align: middle;
+}
+ #perfilImagen{
+	 width:50%;
+	 border-radius:150px;
+ }
+
+ .sidenavSub img{
+	width:30px;
+	vertical-align: middle;
+	margin-right:10px;
+}
+.sidenavMedia{
+	display:inline;
+}
+.sidenavMedia img{
+	width:30px;
+	margin-left:10px;
+	
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+ 
+#main {
+    transition: margin-left .25s;
+    padding: 20px;
+    overflow:hidden;
+    width:100%;
+	display:flex;
+}
+.seccionUno, .seccionDos{
+	padding:30px;
+	text-align:justify;
+	width:50%;
+}
+.seccionUno input{
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 16px;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right:40px;
+  width:84%
+}
+.seccionUno button{
+	padding: 5px 13px;
+	height:30px;
+	border-radius:16px;
+	background-color:rgb(19,121,185);
+	border:none;
+	color:white;
+	font-weight:bold;
+}
+.seccionDos input{
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  padding-left: 42px;
+  background-image: url('../img/buscar.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width:100%
+}
+body {
+  overflow-x: hidden;
+}
+
+.topnav {
+    background-color:  rgb(130, 4, 52);
+    overflow: hidden;
+	width:3%;
+	height:625px;
+}
+ .topnav img{
+	 margin-top:250px;
+ }
+.topnav a {
+	height:100%;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+ 
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+ 
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+ 
+a svg{
+  transition:all .25s ease;
+ 
+  &:hover{
+    #transform:rotate(180deg);
+  }
+}
+ 
+#ico{
+  display: none;
+}
+ 
+.menu{
+  background: #000;
+  display: none;
+  padding: 5px;
+  width: 320px;
+  @include border-radius(5px);
+ 
+  #transition: all 0.25s ease;
+ 
+  a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 2px;
+    margin: 3px 0;
+    text-decoration: none;
+    background: #444;
+ 
+    &:nth-child(1){
+      margin-top: 0;
+      @include border-radius(3px 3px 0 0 );
+    }
+    &:nth-child(5){
+      margin-bottom: 0;
+      @include border-radius(0 0 3px 3px);
+    }
+ 
+    &:hover{
+      background: #555;
+    }
+  }
+}
+.cambiarModo{
+	text-align:right;
+}
+#paraPublicar{
+	padding:10px;
+}
+/* switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
