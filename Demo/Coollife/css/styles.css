@@ -42,6 +42,13 @@ nav>img{
 	margin-right:23%;
 
 }
+.sesionIniciada{
+	position: fixed; 
+    z-index: 1px;
+    top: 0;
+    left: 0;
+	overflow-x: hidden;
+}
 .notificaciones img{
 	height:30px;
 	margin-left:10px;
@@ -130,8 +137,16 @@ nav>img{
 .contenido{
 	display:flex;
 }
-
-
+.principalBody{
+	height:700px;
+}
+#iconosPublicar{
+	width:30px;
+	margin-left:25px;
+	margin-right:25px;
+	cursor:pointer;
+	cursor:hand;
+}
 /* Menu desplazamiento */
 .sidenav {
     height: 100%;
@@ -196,6 +211,7 @@ nav>img{
     overflow:hidden;
     width:100%;
 	display:flex;
+	margin-top:30px;
 }
 .seccionUno, .seccionDos{
 	padding:30px;
@@ -242,7 +258,7 @@ body {
     background-color:  rgb(130, 4, 52);
     overflow: hidden;
 	width:3%;
-	height:625px;
+	height:700px;
 }
  .topnav img{
 	 margin-top:250px;
@@ -319,12 +335,6 @@ a svg{
 	padding:10px;
 }
 /* switch */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
 
 .switch {
   position: relative;
