@@ -2,7 +2,7 @@ function iniciar(){
 	var correo = document.getElementById("email").value;
 	var contrasenia = document.getElementById("password").value;
 	if(correo=="admin@coollife.com"&&contrasenia=="admin123"){
-		alert("hola");
+		alert("Sesión iniciada");
 		window.location="principal.html";
 	}
 }
