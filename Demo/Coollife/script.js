@@ -292,7 +292,6 @@ function agrandar(alturaAgrandar){
 
 
 
-
 //Menu lateral desplegable
 function openNav() {
     document.getElementById("sideNavigation").style.width = "350px";

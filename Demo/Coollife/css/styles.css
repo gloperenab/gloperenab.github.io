@@ -3,7 +3,9 @@
 	margin:0;
 	padding:0;
 }
-/* Menu */
+
+/*------------------------------ Menu ------------------------------*/
+
 nav{
 	background-color: rgb(43, 56, 64);
 	height:60px;
@@ -11,37 +13,43 @@ nav{
 	align-items: center;
 	display: flex;
 }
+
 nav ul{
 	height: 100%;
 	align-items: center;
 	display: flex;
 }
+
 nav ul li{
 	list-style: none;
 	display: inline-block;
 }
+
 nav ul li a{
 	text-decoration: none;
 	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
 nav ul li:hover{
 	height: 100%;
 	align-items: center;
 	display: flex;
 }
+
 nav>img{
 	height:50%;
 	margin-left:20px;
 	margin-right:45%;
 }
+
 .sesionIniciada>img{
 	height:50%;
 	margin-left:20px;
 	margin-right:23%;
-
 }
+
 .sesionIniciada{
 	position: fixed; 
     z-index: 1px;
@@ -49,15 +57,18 @@ nav>img{
     left: 0;
 	overflow-x: hidden;
 }
+
 .notificaciones img{
 	height:30px;
 	margin-left:10px;
 }
+
 .notificaciones  a, .notificaciones a:visited{
 	color:yellow;
 	font-weight:bold;
 	text-decoration:none;
 }
+
 #tops{
 	border:1px solid;
 	border-radius:5px;
@@ -65,81 +76,99 @@ nav>img{
 }
 
 
-/* Main */
+/*------------------------------ Main ------------------------------*/
 .login{
 	display:flex;
 	height:625px;
 }
+
 .info{
 	padding:30px;
 	width:50%;
 	background-color:rgb(130, 4, 52);
 	padding-top:10%;
 	padding-bottom:5%;
+	
 	vertical-align: center;
 }
+
 .info img{
 	width:200px;
 }
+
 .info p{
 	padding-left:50px;
 	font-weight:bold;
 	color:white;
 	font-style:italic;
 }
+
 .inicio{
 	width:50%;
 	padding-top:10%;
 	text-align: center;
 }
+
 .register{
 	width:50%;
 	padding-top:1%;
 	text-align: center;
 }
+
 .inicio h1, .register h1{
 	font-style: italic;
 }
+
 .inicio input, .register input{
 	height:25px;
 	width:300px;
 	margin-left:30px;
+	padding-left:10px;
 }
+
 .inicio button, .register button{
 	height:30px;
 	width: 100px;
 	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
 }
+
 .boton{
 	height:30px;
 	width: 100px;
 	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
 }
+
 .inicio p, .register p{
 	color: rgb(95,95,95);
 	font-size:16px;
 	margin-top:5px;
 	margin-bottom:5px;
 }
+
 .inicio a .register a{
 	color: rgb(0,64,128);
 	font-style:italic;
 }
+
 .inicio img, .register form>img{
 	height:30px;
 	position:absolute;
 }
+
 .captcha{
 	display:inline-block;
 	text-align:center;
 	width:200px;
 }
+
 .contenido{
 	display:flex;
 }
+
 .principalBody{
 	height:750px;
 }
+
 #iconosPublicar{
 	width:30px;
 	margin-left:25px;
@@ -147,9 +176,11 @@ nav>img{
 	cursor:pointer;
 	cursor:hand;
 }
+
 .contenidoExtra{
 	display:flex;
 }
+
 .persona{
 	width:50%;
 	height:200px;
@@ -157,12 +188,15 @@ nav>img{
 	padding:5px;
 	text-align:center;
 }
+
 .persona img{
 	width:270px;
 }
+
 .personaInfo{
 	text-align:right;
 }
+
 .personaInfo font{
 	
 	vertical-align: middle;
@@ -173,12 +207,14 @@ nav>img{
 	border-radius:18px;
 	box-shadow: -3px 3px 5px rgba(0,0,0,0.75);
 }
+
 #fotoPersona{
 	width:50px;
 	border-radius: 150px; 
 	vertical-align:middle;
 	box-shadow: -1px 3px 5px rgba(0,0,0,0.75);
 }
+
 #iconoPersona{
 	width:40px;
 	margin-right:5px;
@@ -186,63 +222,13 @@ nav>img{
 	cursor:pointer;
 	cursor:hand;
 }
-/* Menu desplazamiento */
-.sidenav {
-    height: 100%;
-    width: 0px;
-    position: fixed; 
-    z-index: 1px;
-    top: 100;
-    left: 10;
-    background-color: rgb(130, 4, 52);
-    overflow-x: hidden;
-    padding-top: 60px; 
-    transition: 0.25s; 
-}
- 
-/* The navigation menu links */
-.sidenav>a, .sidenavSub a{
-    padding: 8px 8px 8px 18px;
-    text-decoration: none;
-    font-size: 14px;
-    color: #ffff;
-    display: block;
-    transition: 0.3s;
-}
-.sidenav p {
-	text-align: right; 
-	margin-right:50px;
-	margin-top:5px;
-    font-size: 22px;
-    color: #ffff;
-	vertical-align: middle;
-}
+
  #perfilImagen{
 	 width:50%;
 	 border-radius:150px;
  }
 
- .sidenavSub img{
-	width:30px;
-	vertical-align: middle;
-	margin-right:10px;
-}
-.sidenavMedia{
-	display:inline;
-}
-.sidenavMedia img{
-	width:30px;
-	margin-left:10px;
-	
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+ /*------------------------------ Contenido 1 ------------------------------*/
  
 #main {
     transition: margin-left .25s;
@@ -257,10 +243,12 @@ nav>img{
 	text-align:justify;
 	width:50%;
 }
+
 .seccionDos{
 	margin-top:30px;
 	padding:5px;
 }
+
 .seccionUno input{
   padding: 5px 20px;
   box-sizing: border-box;
@@ -271,6 +259,7 @@ nav>img{
   padding-right:40px;
   width:84%
 }
+
 .seccionUno button{
 	padding: 5px 13px;
 	height:30px;
@@ -280,6 +269,7 @@ nav>img{
 	color:white;
 	font-weight:bold;
 }
+
 .seccionDos input{
   padding: 12px 20px;
   box-sizing: border-box;
@@ -293,8 +283,118 @@ nav>img{
   background-repeat: no-repeat;
   width:100%
 }
+
 body {
   overflow-x: hidden;
+}
+
+/*------------------------------ Contenido 2 ------------------------------*/
+
+.main2 {
+    transition: margin-left .25s;
+    padding: 20px;
+    overflow:hidden;
+	margin-top:30px;
+	width: 95%;
+}
+
+.main2 font{
+	display:inline-block;
+	margin-left:30px;
+	margin-top:-55px;
+	margin-bottom:40px;
+	color: rgb(48,48,48);
+	font-style:italic;
+	font-size:26px;
+	vertical-align: middle;
+	font-weight:bold;
+}
+#topImg{
+	margin-top:-100px;
+	margin-left:30px;
+	width:40px;
+	vertical-align: middle;
+	display:inline-block;
+}
+#comercioImg{
+	margin-top:-100px;
+	margin-left:200px;
+	width:150px;
+	vertical-align: middle;
+	display:inline-block;
+}
+.galeria img{
+	width:350px;
+	height:230px;
+	margin:10px 10px;
+	/*** Your CSS code ***/
+	border-style: solid;
+	border-width: 15px 5px 15px 5px;
+	-moz-border-image: url('../img/fondoImg.png') 8 0 8 0 repeat repeat;
+	-webkit-border-image: url('../img/fondoImg.png') 8 0 8 0 repeat repeat;
+	-o-border-image: url('../img/fondoImg.png') 8 0 8 0 repeat repeat;
+	border-image: url('../img/fondoImg.png') 8 0 8 0 repeat repeat;
+}
+.seccionTres{
+	padding:30px;
+	text-align:justify;
+	width:95%;
+}
+
+/*------------------------------ Menu desplazamiento ------------------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed; 
+    z-index: 1px;
+    top: 100;
+    left: 10;
+    background-color: rgb(130, 4, 52);
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.25s; 
+}
+ 
+.sidenav>a, .sidenavSub a{
+    padding: 8px 8px 8px 18px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav p {
+	text-align: right; 
+	margin-right:50px;
+	margin-top:5px;
+    font-size: 22px;
+    color: #ffff;
+	vertical-align: middle;
+}
+
+ .sidenavSub img{
+	width:30px;
+	vertical-align: middle;
+	margin-right:10px;
+}
+
+.sidenavMedia{
+	display:inline;
+}
+
+.sidenavMedia img{
+	width:30px;
+	margin-left:10px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .topnav {
@@ -303,9 +403,11 @@ body {
 	width:3%;
 	height:750px;
 }
+
  .topnav img{
 	 margin-top:250px;
  }
+ 
 .topnav a {
 	height:100%;
     float: left;
@@ -371,14 +473,17 @@ a svg{
     }
   }
 }
+
+#paraPublicar{
+	padding:10px;
+}
+
+/* switch
+
 .cambiarModo{
 	text-align:right;
 	z-index:-100;
 }
-#paraPublicar{
-	padding:10px;
-}
-/* switch
 
 .switch {
   position: relative;

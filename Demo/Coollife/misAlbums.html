@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mis Albums</title>
+<link rel="stylesheet" type"text/css" href="css/styles.css">
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body class="principalBody">
+	
+	<nav class="sesionIniciada">
+		<img src="img/logo1.png">
+		<div class="notificaciones">
+			<a href=""><img src="img/perfilMenuArriba.png">1</a>
+			<a href=""><img src="img/favoritosMenuArriba.png"></a>
+			<a href=""><img src="img/topMenuArriba.png">8</a>
+		</div>
+		<ul>
+			<li><a href="">Perfil</a></li>
+			<li><a href="">Cool-location</a></li>
+			<li><a href="">Servicios</a></li>
+			<li><a href="">Lifers</a></li>
+			<li><a href="">Inicio</a></li>
+			<li><a href="" id="tops">¡Top!</a></li>
+		</ul>
+	</nav>
+	
+	
+	<main class="contenido">
+		<div id="sideNavigation" class="sidenav">
+			 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			 <center>
+			 <img src="img/x2.jpg" id="perfilImagen"><br>
+			 </center>
+			 <p>El Admin</p>
+			 <div class="sidenavSub">
+				 <a href="principal.html"><img src="img/perfilMenu.png">Perfil</a>
+				 <a href="misAlbums.html"><img src="img/albumsMenu.png">Mis albums</a>
+				 <a href="#"><img src="img/videosMenu.png">Videos</a>
+				 <a href="#"><img src="img/lugaresMenu.png">Lugares</a>
+				 <a href="comercio.html"><img src="img/comercioMenu.png">Comercio</a>
+				 <a href="login.html"><img src="img/cerrar.png">Cerrar sesión</a>
+			 </div><br>
+			 <div class="sidenavMedia">
+				<center>
+				<a href=""><img src="img/fb.png"></a>
+				<a href=""><img src="img/tw.png"></a>
+				<a href=""><img src="img/in.png"></a>
+				<a href=""><img src="img/go.png"></a>
+				</center>
+			 </div>
+		</div>
+			 
+		<div class="topnav" id="menuNavegacion">
+			<a href="#" onclick="openNav()">
+				<img src="img/menuPuntos.png" width="100%" >
+			 </a>
+		</div>
+
+		<div class="main2"><!--Contenido principal -->
+			
+			<div style="text-align:right">
+				<br>
+				<img src="img/switch.png">
+				<div class="seccionDos" style="margin-left:47%; margin-top:5px">
+					<input type="text" id="buscar">
+				</div>
+			</div>
+			<img src="img/topMenuArriba.png" id="topImg"><font>Victoria, Tamaulipas 5/9</font>
+			<div class="seccionTres">
+				<div class="galeria">
+					<center>
+					<br><img src="img/victoria1.jpg"><img src="img/victoria2.jpg"><img src="img/victoria3.jpg">
+					<br><img src="img/victoria4.jpg"><img src="img/victoria5.jpg"><img src="img/victoria6.jpg">
+					<br><img src="img/victoria7.jpg"><img src="img/victoria8.jpg"><img src="img/victoria9.jpg">
+					</center>
+				</div>
+				<script type="text/javascript">
+					var alturaAgrandar="460";
+					var menu=document.getElementById("menuNavegacion");
+					var nuevaAltura=parseInt(menu.clientHeight)+parseInt(alturaAgrandar);
+					var definirAltura=nuevaAltura+"px";
+					menu.style.height = definirAltura;
+				</script>
+			</div>
+			
+		</div>
+	</main>
+	
+	<aside>
+	</aside>
+	
+	<footer>
+	</footer>
+</body>
+</html>
