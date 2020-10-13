@@ -278,7 +278,7 @@ nav>img{
   font-size: 16px;
   background-repeat: no-repeat;
   padding-left: 42px;
-  background-image: url('../img/buscar.png');
+  background-image: url('../img/buscar.PNG');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   width:100%
@@ -330,10 +330,10 @@ body {
 	/*** Your CSS code ***/
 	border-style: solid;
 	border-width: 15px 5px 15px 5px;
-	-moz-border-image: url('imagendefondo.png') 8 0 8 0 repeat repeat;
-	-webkit-border-image: url('imagendefondo.png') 8 0 8 0 repeat repeat;
-	-o-border-image: url('imagendefondo.png') 8 0 8 0 repeat repeat;
-	border-image: url('imagendefondo.png') 8 0 8 0 repeat repeat;
+	-moz-border-image: url('../img/../img/imagendefondo.PNG') 8 0 8 0 repeat repeat;
+	-webkit-border-image: url('../img/imagendefondo.PNG') 8 0 8 0 repeat repeat;
+	-o-border-image: url('../img/imagendefondo.PNG') 8 0 8 0 repeat repeat;
+	border-image: url('../img/imagendefondo.PNG') 8 0 8 0 repeat repeat;
 }
 .seccionTres{
 	padding:30px;
