@@ -222,7 +222,10 @@ nav>img{
 	cursor:pointer;
 	cursor:hand;
 }
-
+#cursorSwitch{
+	cursor:pointer;
+	cursor:hand;
+}
  #perfilImagen{
 	 width:50%;
 	 border-radius:150px;
@@ -302,12 +305,14 @@ body {
 	display:inline-block;
 	margin-left:30px;
 	margin-top:-55px;
+	padding:10px;
 	margin-bottom:40px;
 	color: rgb(48,48,48);
 	font-style:italic;
 	font-size:26px;
 	vertical-align: middle;
 	font-weight:bold;
+	background-color:white;
 }
 #topImg{
 	margin-top:-100px;
@@ -401,7 +406,7 @@ body {
     background-color:  rgb(130, 4, 52);
     overflow: hidden;
 	width:3%;
-	height:750px;
+	height:830px;
 }
 
  .topnav img{
@@ -478,7 +483,7 @@ a svg{
 	padding:10px;
 }
 
-/* switch
+/* switch*/
 
 .cambiarModo{
 	text-align:right;
@@ -543,4 +548,4 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
- */
+ 

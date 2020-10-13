@@ -8,7 +8,7 @@
 
 <script type="text/javascript" src="script.js"></script>
 </head>
-<body class="principalBody">
+<body class="principalBody" id="bodyP">
 	
 	<nav class="sesionIniciada">
 		<img src="img/logo1.png">
@@ -78,12 +78,12 @@
 			</div>
 			<div class="seccionDos">
 				<div class="cambiarModo">
-					<img src="img/switch.png">
-					<!-- Switch interactivo 
+					<img src="img/switch.png" id="cursorSwitch" onclick="cambiarModo()" id="cursorSwitch" onclick="cambiarModo()">
+					<!-- Switch interactivo
 					<label class="switch" style="text-align: right">
 						<input type="checkbox">
 						 <span class="slider round"></span>
-					</label>-->
+					</label> -->
 				</div>	
 				<input type="text" id="buscar">
 				<br><br>
@@ -119,6 +119,7 @@
 				</div>
 			</div>
 		</div>
+		
 	</main>
 	
 	<aside>

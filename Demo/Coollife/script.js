@@ -286,7 +286,21 @@ function agrandar(alturaAgrandar){
 	menu.style.height = definirAltura;
 
 }
-
+var contador=1;
+function cambiarModo(){
+	var body=document.getElementById("bodyP");
+	if(contador==1){
+		var img = document.getElementById("cursorSwitch");
+		img.setAttribute("src","img/switch2.png");
+		body.setAttribute("style","background-color:rgb(41,49,52)");
+		contador=0;
+	} else {
+		var img = document.getElementById("cursorSwitch");
+		img.setAttribute("src","img/switch.png");
+		body.setAttribute("style","background-color:white");
+		contador=1;
+	}
+}
 
 
 
