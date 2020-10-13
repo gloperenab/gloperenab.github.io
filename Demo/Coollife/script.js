@@ -6,7 +6,20 @@ function iniciar(){
 		window.location="principal.html";
 	}
 }
-
+function registrar(){
+	var nombre= document.getElementById("r_nombre").value;
+	var email =  document.getElementById("r_email").value;
+	var contra = document.getElementById("r_contra").value;
+	var contra2 = document.getElementById("r_contra2").value;
+	
+	if(nombre!=""&&email!=""&&contra!=""&&contra2!=""){
+		if(contra==contra2){
+			alert("Cuenta registrada");
+			window.location="login.html";
+		}
+	}
+	
+}
 function publicar(){
 	var mandar="180";
 	this.agrandar(mandar);
@@ -302,6 +315,15 @@ function cambiarModo(){
 	}
 }
 
+var contador2=1;
+function captchaVer(){
+	var imgCap=document.getElementById("verificacion");
+	if(contador2==1){
+		imgCap.setAttribute("src","img/captcha2.png");
+		var botonRegistrar = document.getElementById("b_registrar");
+		botonRegistrar.removeAttribute("disabled");
+	}
+}
 
 
 

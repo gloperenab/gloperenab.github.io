@@ -88,12 +88,13 @@ nav>img{
 	background-color:rgb(130, 4, 52);
 	padding-top:10%;
 	padding-bottom:5%;
-	
+	height:560px;
 	vertical-align: center;
 }
 
 .info img{
 	width:200px;
+	
 }
 
 .info p{
@@ -107,16 +108,20 @@ nav>img{
 	width:50%;
 	padding-top:10%;
 	text-align: center;
+	
 }
-
+.inicio, .register{
+	height:650px;
+}
 .register{
 	width:50%;
-	padding-top:1%;
+	padding-top:7%;
 	text-align: center;
 }
 
 .inicio h1, .register h1{
 	font-style: italic;
+	margin-bottom:10px;
 }
 
 .inicio input, .register input{
@@ -150,12 +155,14 @@ nav>img{
 	font-style:italic;
 }
 
-.inicio img, .register form>img{
+.inicio img, .register>img{
 	height:30px;
 	position:absolute;
 }
 
 .captcha{
+	cursor:pointer;
+	cursor:hand;
 	display:inline-block;
 	text-align:center;
 	width:200px;

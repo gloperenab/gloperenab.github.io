@@ -32,25 +32,25 @@
 			</p>
 		</div>
 		<div class="register">
-		<form action="?" method="post">
-			<h1>Registrarme</h1>
-			
-			<label>Nombre</label><br>
-			<img src="img/name.png"><input type="name" name="text" required><br><br>
-			<label>Correo electrónico / Lifeid</label><br>
-			<img src="img/email.png"><input type="email" name="email" required><br><br>
-			<label>Contraseña</label><br>
-			<img src="img/password.png"><input type="password" name="contrasenia" required><br><br>
-			<label>Confirmar contraseña</label><br>
-			<img src="img/password.png"><input type="password" name="contrasenia" required><br><br>
-			
-			<div class="captcha">
-				<center><img src="img/captcha.png" class="captcha"><center>
-			</div>
-			<br><br>
-			<button name="registrarse">Registrarse</button>
-			<br><br><br>
-		</form>
+			<!--<form action="?" method="post">-->
+				<h1>Registrarme</h1>
+				
+				<label>Nombre</label><br>
+				<img src="img/name.png"><input type="name" id="r_nombre" name="text" required ><br><br>
+				<label>Correo electrónico / Lifeid</label><br>
+				<img src="img/email.png"><input type="email" name="email" required id="r_email"><br><br>
+				<label>Contraseña</label><br>
+				<img src="img/password.png"><input type="password" name="contrasenia" required id="r_contra"><br><br>
+				<label>Confirmar contraseña</label><br>
+				<img src="img/password.png"><input type="password" name="contrasenia" required id="r_contra2"><br><br>
+				
+				<div class="captcha">
+					<center><img src="img/captcha.png" class="captcha" id="verificacion" onclick="captchaVer()"><center>
+				</div>
+				<br><br>
+				<button name="registrarse" id="b_registrar" disabled="true" onclick="registrar()">Registrarse</button>
+				<br><br><br>
+			<!--</form>-->
 			<p>¿Ya estás registrado?</p>
 			<a href="login.html">Inicia sesión aquí</a>
 		</div>
