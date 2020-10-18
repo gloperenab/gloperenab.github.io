@@ -1,0 +1,165 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <title>Orden de compra con JS</title>
+	<link rel="stylesheet" type"text/css" href="css/styles.css">
+	<link rel="stylesheet" type"text/css" href="css/dialogos.css">
+</head>
+<body  oncontextmenu="return false">
+	<div class="principal">
+		<nav>
+			<div class="cabecera">
+				<img src="Imagenes/js.jpg">
+				<div>
+					<h3>Unidad 2: Ejercicio 06 | Orden de compra con JS</h3><br>
+					<p>
+						Alumno: Gerardo Loperena Bustillos<br>
+						Carrera: Ingeniería en Tecnologías de la Información<br>
+						E-Mail: 1830472@upv.edu.mx
+					</p>
+				</div>
+				
+			</div>
+			<center>
+			<table>
+				<tr>
+					<td><a href="#">Inicio</a></td>
+					<td><a href="..\..\..\index.html">Regresar a página principal</a></td>
+				</tr>
+			</table>
+			</center>
+		</nav>
+		
+		<div class="contenido" id="contenido">
+			<main>
+				<h2>Orden de venta</h2>
+				<div class="mainContenido">
+					<section class="ingresar">
+					
+						<!-- Combo box de productos -->
+						<select name="productos" id="productos">
+							<option value="seleccione">Seleccione...</option>
+							<option value="Leche">Leche</option>
+							<option value="Pieza de pan">Pieza de pan</option>
+							<option value="Galletas">Galletas</option>
+							<option value="Litro de agua">Litro de agua</option>
+						</select>
+						<br><br>
+						
+						<!------------- Dialogos ------------->
+						
+						<!--Para eliminar-->
+						<dialog id="dialogoEliminar"> 
+							<div class="header">
+								<h3>Eliminar producto de lista</h3>
+							</div>
+							<div class="body">
+								<p>ID de producto a eliminar
+										<input type="text" id="productoEliminar">
+								</p> 
+								<button onclick="dialogoConfirmarEliminar() " class="continuar">Continuar</button> 
+								<button onclick="cerrarDialogos()" class="cancelar">Cancelar</button>
+							</div>
+						</dialog>
+						
+						<dialog id="dialogoConfirmacionBorrar"> 
+							<div class="header">
+								<h3>Confirmarción</h3>
+							</div>
+							<div class="body">
+								<p>¿Esta seguro que desea borrar el articulo con ID <b><font id="articulo">X</font></b>?
+								</p> 
+								<button onclick="borrarDeTabla()" class="continuar">Eliminar</button> 
+								<button onclick="cerrarDialogos()" class="cancelar">Cancelar</button>
+							</div>
+						</dialog>
+						
+						<dialog id="dialogoError"> 
+							<div class="header">
+								<h3>Error</h3>
+							</div>
+							<div class="body">
+								<p>El producto seleccionado no existe</p> 
+								<button onclick="cerrarDialogos()" class="continuar">Ok</button>
+							</div>
+						</dialog>
+						
+						<!--Para modificar-->
+						<dialog id="dialogoModificar"> 
+							<div class="header">
+								<h3>Modificar producto de lista</h3>
+							</div>
+							<div class="body">
+								<p>ID de producto a modificar
+										<input type="text" id="productoModificar">
+								</p> 
+								<button onclick="dialogoConfirmarModificar() " class="continuar">Continuar</button> 
+								<button onclick="cerrarDialogos()" class="cancelar">Cancelar</button>
+							</div>
+						</dialog>
+						
+						<dialog id="dialogoModificar2"> 
+							<div class="header">
+								<h3>Modificar producto de lista</h3>
+							</div>
+							<div class="body">
+								<p>ID del producto a modificar: <b><font id="articuloM">X</font></b><br><br>
+										
+										<select name="productos" id="productosModificar">
+											<option value="seleccione">Seleccione...</option>
+											<option value="Leche">Leche</option>
+											<option value="Pieza de pan">Pieza de pan</option>
+											<option value="Galletas">Galletas</option>
+											<option value="Litro de agua">Litro de agua</option>
+										</select><br><br>
+										
+										<label>Precio:</label><br>
+										<input type="text" placeholder="Ingrese precio" id="precioModiciar"><br><br>
+										<label>Unidades:</label><br>
+										<input type="text" placeholder="Ingrese undidades" id="unidadesModificar"><br><br>
+										
+								</p> 
+								<button onclick="modificar()" class="continuar">Continuar</button> 
+								<button onclick="cerrarDialogos()" class="cancelar">Cancelar</button>
+							</div>
+						</dialog>
+						<!-------------Fin dialogos ------------->
+						
+						<label>Precio:</label><br>
+						<input type="text" placeholder="Ingrese precio" id="precio"><br><br>
+						<label>Unidades:</label><br>
+						<input type="text" placeholder="Ingrese undidades" id="unidades"><br><br>
+						<button onclick="agregar()" class="agregar">Agregar</button>
+						<button onclick="dialogoEliminar()" class="eliminar" id="eliminar">Eliminar</button>
+						<button onclick="dialogoModificar()" class="modificar">Modificar</button>
+						<button onclick="limpiar()" class="limpiar">Limpiar</button>
+						
+						<!-- Script aquí para que funcionen los dialogos -->
+						<script type="text/javascript" src="script.js"></script>
+						
+					</section>
+					
+					<section class="mostrar">
+					
+						<!------------- Tabla de artículos ------------->
+						<table border="1px" id="tablaMostrar">
+							<tr class="paraTh">
+								<th>Número</th>
+								<th>Producto</th>
+								<th>Precio Unitario</th>
+								<th>Unidades</th>
+								<th>Monto</th>
+							</tr>
+						</table>
+					</section>
+				</div>
+			</main>
+		</div><!-- fin contenido-->
+		
+		<footer>
+			<center><p>@Todos los derechos reservados</p></center>
+		</footer>
+	</div>
+</body>
+</html>

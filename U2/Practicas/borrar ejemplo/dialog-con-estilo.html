@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <meta http-equiv='Content-Type' content='Type=text/html; charset=utf-8'>
+        <title>El elemento dialog (diálogo) en HTML5 - Ejemplo</title>
+        <link rel="stylesheet" href="dialogos.css">
+        <link rel="stylesheet" href="example.css">
+		<script type="text/javascript" src="dialogos.js"></script>
+    </head>
+    <body>
+        <section>
+
+            <h3>Pulse cualquiera de los botones para abrir el dialog:</h3>
+
+            <dialog> 
+                <div class="header">
+                    <h3>Titulo</h3>
+                </div>
+                <div class="body">
+                    <p>El dialog está abierto</p> 
+                    <button onclick="closeDialog()">Clic para cerrar</button> 
+                </div>
+            </dialog> 
+
+            <button onclick="showDialog()">Abrir con show()</button>
+            <button onclick="showDialog2()">Abrir con showModal()</button>	
+        </section>
+        <script type="text/javascript" src="dialogos.js"></script>
+    </body>
+</html>

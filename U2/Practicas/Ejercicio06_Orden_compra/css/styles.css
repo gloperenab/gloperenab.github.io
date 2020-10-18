@@ -1,0 +1,167 @@
+/*----------------------------------- Estilos para la práctica -----------------------------------*/
+
+select {
+	width:300px;
+	height:30px;
+	padding-left:5px;
+}
+input {
+	width:290px;
+	height:20px;
+	padding-left:5px;
+	margin-top:10px;
+}
+button{
+	height:40px;
+	width:300px;
+	margin-top:15px;
+}
+table{
+	border-color:rgb(244,176,131);
+}
+.paraTh{
+	background-color:rgb(237, 125, 49);
+}
+.paraTdImpar{
+	background-color:rgb(247, 202, 172);
+}
+.paraTdPar{
+	background-color:white;
+}
+.infoVenta{
+	background-color:rgb(195,195,195);
+}
+.agregar{
+	font-weight:bold;
+	font-size:16px;
+	background-color:lime;
+}
+.agregar:hover{
+	background-color:white;
+	color:green;
+}
+.eliminar{
+	font-weight:bold;
+	font-size:16px;
+	background-color:red;
+}
+.eliminar:hover{
+	background-color:white;
+	color:red;
+}
+.modificar{
+	font-weight:bold;
+	font-size:16px;
+	background-color:orange;
+}
+.modificar:hover{
+	background-color:white;
+	color:orange;
+}
+.limpiar {
+	font-weight:bold;
+	font-size:16px;
+	background-color:rgb(0,149,255);
+}
+.limpiar:hover{
+	background-color:white;
+	color:rgb(0,149,255);
+}
+
+.mainContenido{
+	display:flex;
+}
+.ingresar{
+	width:35%;
+}
+.mostrar{
+	width:65%;
+}
+#tablaMostrar{
+	width:100%;
+}
+
+/*----------------------------------- Estilos generales de la práctica -----------------------------------*/
+
+*{
+	font-family: Arial;
+}
+body{
+	margin-top:0;
+	margin-bottom:0;
+	background-color: #4e4438;
+}
+a{
+	text-decoration:none;
+}
+nav a, nav a:visited{
+	color:white;
+}
+a:hover, nav a:hover{
+	color:black;
+}
+.principal{
+	margin-left:5%;
+	margin-right:5%;
+	background-color:#5d3953;
+	height: 100%;
+}
+.contenido{
+	display: flex;
+	margin-bottom:-18px;
+	height:900px;
+}
+.cabecera{
+	display: flex;
+	align-items: center;
+	padding:10px;
+}
+.cabecera img{
+	width:30%;
+	margin-right:5%;
+}
+
+.cabecera div{
+	display:inline-block;
+	margin-left:10px;
+}
+.cabecera h3{
+	display:inline;
+}
+tr {
+	height:30px;
+	width:100%;
+}
+td {
+	text-align:center;
+	width:7%;
+}
+nav{
+	background-color: #d33a59;
+}
+nav div{
+	background-color: #fcce3b;
+}
+main{
+	padding:30px;
+	padding-left:60px;
+	background-color: white;
+	float: left;
+	width: 100%;
+}
+main h2{
+	border-bottom:1px solid;
+	margin-bottom:50px;
+}
+#img img{
+	width:150px;
+}
+
+footer{
+	padding:20px;
+	height:80px;
+	background-color:#024a59;
+	align-items:center;
+	color:white;
+}
+
