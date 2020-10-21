@@ -155,11 +155,19 @@ nav>img{
 	font-style:italic;
 }
 
-.inicio img, .register>img{
+.inicio>img, .register>img{
 	height:30px;
 	position:absolute;
 }
-
+.divGoogle{
+	width:185px;
+	height:91;
+	cursor:pointer;
+	cursor:hand;
+	margin-top:20px;
+	margin-bottom:10px;
+	display:inline-block;
+}
 .captcha{
 	cursor:pointer;
 	cursor:hand;

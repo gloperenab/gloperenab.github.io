@@ -77,6 +77,30 @@ table{
 .mostrar{
 	width:65%;
 }
+.mostrar button{
+	width:32px;
+	height:32px;
+	border:1px;
+	margin:0;
+	padding:0;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+	vertical-align:middle;
+}
+.botonEliminar{
+	background:none;
+	background-image: url(../Imagenes/botonEliminar.png);
+	cursor:pointer;
+	cursor:hand;
+}
+.botonModificar{
+	background:none;
+	background-image: url(../Imagenes/botonEditar.png);
+	cursor:pointer;
+	cursor:hand;
+}
 #tablaMostrar{
 	width:100%;
 }

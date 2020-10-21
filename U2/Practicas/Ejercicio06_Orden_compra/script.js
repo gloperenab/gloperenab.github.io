@@ -40,11 +40,32 @@ function agregar(){
 			var columnaMonto = document.createElement("td");
 			columnaMonto.appendChild(document.createTextNode("$"+(precioProducto*unidadesProducto)));
 			columnaMonto.setAttribute("class","montos");
+			
+			var botonModificar = document.createElement("button");
+			botonModificar.setAttribute("value",contador);
+			botonModificar.setAttribute("class","botonModificar");
+			botonModificar.addEventListener("click",function(){
+				dialogoConfirmarModificar(this.value);
+			});
+			
+			var botonEliminar = document.createElement("button");
+			botonEliminar.setAttribute("value",contador);
+			botonEliminar.setAttribute("class","botonEliminar");
+			botonEliminar.addEventListener("click",function(){
+				dialogoConfirmarEliminar(this.value);
+			});
+
+			var columnaBotones = document.createElement("td");
+			columnaBotones.setAttribute("style","vertical-align: middle;");
+			columnaBotones.appendChild(botonModificar);
+			columnaBotones.appendChild(botonEliminar);
+			
 			fila.appendChild(columnaId);
 			fila.appendChild(columnaProd);
 			fila.appendChild(columnaPrecioU);
 			fila.appendChild(columnaUnidades);
 			fila.appendChild(columnaMonto);
+			fila.appendChild(columnaBotones);
 			
 			if(contador>1){
 				var info=document.getElementById("info");
@@ -63,6 +84,11 @@ function agregar(){
 	} else {
 		alert("Debe seleccionar un producto");
 	}
+}
+
+function kaka(id_eliminar){
+	//let id = id_eliminar.id;
+	alert(id_eliminar);
 }
 
 /* ------------------------------------------ Para eliminar articulos ------------------------------------------ */
@@ -243,26 +269,19 @@ function limpiarEntradas(){
 
 /* ------------------------------------------ Para los diálogos ------------------------------------------ */
 
-var dialog = document.getElementById("dialogoEliminar");
+
 var dialog2 = document.getElementById("dialogoConfirmacionBorrar");
 var dialog3 = document.getElementById("dialogoError");
 
-var dialog4 = document.getElementById("dialogoModificar");
 var dialog5 = document.getElementById("dialogoModificar2");
 
 var buttonOpen = document.getElementById("eliminar");
 var idProductoModificar;
 
-//Abrir dialogo de eliminar
-function dialogoEliminar() {
-	dialog.show();
-}
-
 //Confirmacion eliminar
-function dialogoConfirmarEliminar() {
-	idProductoEliminar = document.getElementById("productoEliminar").value;
+function dialogoConfirmarEliminar(recibir) {
+	idProductoEliminar=recibir;
 	if(idProductoEliminar!=""){
-		dialog.close();
 		if(this.existeProducto(idProductoEliminar)==true){
 			//Si el id ingresado existe
 			document.getElementById("articulo").innerText=idProductoEliminar;
@@ -276,11 +295,6 @@ function dialogoConfirmarEliminar() {
 	
 }
 
-//Abrir dialogo de modificar
-function dialogoModificar(){
-	dialog4.show();
-}
-
 //Dialogo para modificar articulo
 function dialogoModificar2(){
 	document.getElementById("articuloM").innerText=idProductoModificar;
@@ -290,10 +304,9 @@ function dialogoModificar2(){
 }
 
 //Confirmacion modificar
-function dialogoConfirmarModificar() {
-	idProductoModificar = document.getElementById("productoModificar").value;
+function dialogoConfirmarModificar(recibir) {
+	idProductoModificar=recibir;
 	if(idProductoModificar!=""){
-		dialog4.close();
 		if(this.existeProducto(idProductoModificar)==true){
 			//Si el id ingresado existe
 			this.dialogoModificar2();
@@ -307,9 +320,7 @@ function dialogoConfirmarModificar() {
 
 //Cerrar dialogos
 function cerrarDialogos() {
-	dialog.close();
 	dialog2.close();
 	dialog3.close();
-	dialog4.close();
 	dialog5.close();
 }

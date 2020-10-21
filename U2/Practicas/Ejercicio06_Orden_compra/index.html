@@ -50,18 +50,6 @@
 						<!------------- Dialogos ------------->
 						
 						<!--Para eliminar-->
-						<dialog id="dialogoEliminar"> 
-							<div class="header">
-								<h3>Eliminar producto de lista</h3>
-							</div>
-							<div class="body">
-								<p>ID de producto a eliminar
-										<input type="text" id="productoEliminar">
-								</p> 
-								<button onclick="dialogoConfirmarEliminar() " class="continuar">Continuar</button> 
-								<button onclick="cerrarDialogos()" class="cancelar">Cancelar</button>
-							</div>
-						</dialog>
 						
 						<dialog id="dialogoConfirmacionBorrar"> 
 							<div class="header">
@@ -86,18 +74,6 @@
 						</dialog>
 						
 						<!--Para modificar-->
-						<dialog id="dialogoModificar"> 
-							<div class="header">
-								<h3>Modificar producto de lista</h3>
-							</div>
-							<div class="body">
-								<p>ID de producto a modificar
-										<input type="text" id="productoModificar">
-								</p> 
-								<button onclick="dialogoConfirmarModificar() " class="continuar">Continuar</button> 
-								<button onclick="cerrarDialogos()" class="cancelar">Cancelar</button>
-							</div>
-						</dialog>
 						
 						<dialog id="dialogoModificar2"> 
 							<div class="header">
@@ -131,8 +107,6 @@
 						<label>Unidades:</label><br>
 						<input type="text" placeholder="Ingrese undidades" id="unidades"><br><br>
 						<button onclick="agregar()" class="agregar">Agregar</button>
-						<button onclick="dialogoEliminar()" class="eliminar" id="eliminar">Eliminar</button>
-						<button onclick="dialogoModificar()" class="modificar">Modificar</button>
 						<button onclick="limpiar()" class="limpiar">Limpiar</button>
 						
 						<!-- Script aquí para que funcionen los dialogos -->
@@ -150,6 +124,7 @@
 								<th>Precio Unitario</th>
 								<th>Unidades</th>
 								<th>Monto</th>
+								<th style="border:none; background-color:white; width:105px"></th>
 							</tr>
 						</table>
 					</section>
