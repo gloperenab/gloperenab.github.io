@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Principal</title>
+<title>Cool-location</title>
 <link rel="stylesheet" type"text/css" href="css/styles.css">
 <link rel="icon" href="img/icono.png" type="image/png">
 
@@ -152,13 +152,21 @@
                             <p>New York Street,  <img src="img/top.png" id="top"> 4.582<br></p><font>Damian Wayne</font><img src="img/personaSiete.png" id="fotoPersona">
                         </div>
                     </div>
-    
+				
                 </div>
 			</div>
 		</div>
 		
 	</main>
-	
+	<script type="text/javascript">
+		function agrandar(alturaAgrandar){
+			var menu=document.getElementById("menuNavegacion");
+			var nuevaAltura=parseInt(menu.clientHeight)+parseInt(alturaAgrandar);
+			var definirAltura=nuevaAltura+"px";
+			menu.style.height = definirAltura;
+		}
+		this.agrandar(260);
+	</script>
 	<aside>
 	</aside>
 	
