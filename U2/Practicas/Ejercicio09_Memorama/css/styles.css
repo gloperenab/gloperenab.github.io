@@ -1,0 +1,132 @@
+/* Para práctica */
+.boton_detener{
+	width:200px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: blue;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+.boton_detener:hover{
+    color: blue;
+    background-color: #ffffff;
+}
+.boton_empezar{
+	width:200px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #0bbd4f;
+    border-radius: 6px;
+    border: 2px solid #03401a;
+}
+.boton_empezar:hover{
+    color: #0bbd4f;
+    background-color: #ffffff;
+}
+
+#contador, #min{
+	font-size:34px;
+}
+
+/* Estilos generales*/
+*{
+	font-family: Arial;
+}
+body{
+	margin-top:0;
+	margin-bottom:0;
+	background-color: #4e4438;
+}
+a{
+	text-decoration:none;
+}
+nav a, nav a:visited{
+	color:white;
+}
+a:hover, nav a:hover{
+	color:black;
+}
+.principal{
+	margin-left:5%;
+	margin-right:5%;
+	background-color:#5d3953;
+	height: 100%;
+}
+.contenido{
+	display: flex;
+	margin-bottom:-18px;
+	height:800px;
+}
+.contenido img{
+	margin:10px 20px;
+}
+.activadas{
+	cursor:pointer;
+	cursor:hand;
+}
+.cabecera{
+	display: flex;
+	align-items: center;
+	padding:10px;
+}
+.cabecera img{
+	width:30%;
+	margin-right:5%;
+}
+
+.cabecera div{
+	display:inline-block;
+	margin-left:10px;
+}
+.cabecera h3{
+	display:inline;
+}
+
+
+tr {
+	height:30px;
+	width:100%;
+}
+td {
+	text-align:center;
+	width:7%;
+}
+nav{
+	background-color: #d33a59;
+}
+nav div{
+	background-color: #fcce3b;
+}
+main{
+	padding:30px;
+	padding-left:60px;
+	background-color: white;
+	float: left;
+	width: 70%;
+}
+main h2{
+	border-bottom:1px solid;
+}
+#img img{
+	width:150px;
+}
+aside{
+	text-align:center;
+	background-color:white;
+	padding:15px;
+	width: 30%;
+}
+
+footer{
+	padding:20px;
+	height:80px;
+	background-color:#024a59;
+	align-items:center;
+	color:white;
+}

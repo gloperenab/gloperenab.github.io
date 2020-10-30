@@ -7,6 +7,7 @@ function iniciar(){
 	}
 }
 function registrar(){
+	/*
 	var nombre= document.getElementById("r_nombre").value;
 	var email =  document.getElementById("r_email").value;
 	var contra = document.getElementById("r_contra").value;
@@ -18,7 +19,7 @@ function registrar(){
 			window.location="login.html";
 		}
 	}
-	
+	*/
 }
 function publicar(){
 	var mandar="180";
@@ -297,7 +298,6 @@ function agrandar(alturaAgrandar){
 	var nuevaAltura=parseInt(menu.clientHeight)+parseInt(alturaAgrandar);
 	var definirAltura=nuevaAltura+"px";
 	menu.style.height = definirAltura;
-
 }
 var contador=1;
 function cambiarModo(){

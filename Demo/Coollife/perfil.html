@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Principal</title>
+<title>Perfil</title>
 <link rel="stylesheet" type"text/css" href="css/styles.css">
 <link rel="icon" href="img/icono.png" type="image/png">
 
@@ -71,19 +71,57 @@
 				<img src="img/configuracion.png" id="iconosPublicar" title="Configuración de publicación">
 				<img src="img/nubeDescargar.png" id="iconosPublicar" title="Descargar álbum desde la nube">
 				</center>
-				<br><br>
+				
 				<div id="paraPublicar">
 				</div>
+				<p style="border-bottom:1px solid"></p>
 				<br>
+				
+				<div class="subContenidoUno">
+					<h2>Perfil de Usuario</h2><br><br>
+					
+					<p style="font-style: italic; color: rgb(51,51,51)">Fotografía de usuario:</p><br>
+					<div style="display:flex">
+						<img src="img/x2.jpg" width="30%" style="margin-right:5%"><font style="align-items: bottom; cursor:pointer; cursor:hand"><b>Editar foto<br>Eliminar foto</b></font>
+						
+					</div>
+					<br><br><p style="border-bottom:1px solid"></p>
+					<div style="display:flex">
+						<div style="width:50%">
+							<br><p style="font-style: italic; color: rgb(51,51,51)">Información de usuario:</p><br>
+							<b>
+							Usuario: admin<br><br>
+							Nombre: El Admin<br><br>
+							Celular: +52-834-148-21-82
+							</b>
+						</div>
+						<div style="width:50%">
+							<br><p style="font-style: italic; color: rgb(51,51,51)">Lifers:</p><br>
+							<div style="text-align: right">
+								<b>
+								239 Lifers.<img src="img/lifers.png" style="margin-left:2%; margin-right:0" width="150px"><br>
+								1459 Seguidores.<img src="img/seguidores.png" style="margin-left:2%; margin-right:0" width="150px"></b>
+							</div>
+						</div>
+					</div>
+					<br><br><p style="border-bottom:1px solid"></p>
+					<br><p style="font-style: italic; color: rgb(51,51,51)">Ubicación:</p><br>
+					<b>Cuidad actual: Cuidad Victoria, Tamaulipas.<br>
+					Lugar de nacimiento: Cuidad Victoria, Tamaulipas.</b>
+				</div>
+				<script type="text/javascript">
+					function agrandar(alturaAgrandar){
+						var menu=document.getElementById("menuNavegacion");
+						var nuevaAltura=parseInt(menu.clientHeight)+parseInt(alturaAgrandar);
+						var definirAltura=nuevaAltura+"px";
+						menu.style.height = definirAltura;
+					}
+					this.agrandar(60);
+				</script>
 			</div>
 			<div class="seccionDos">
 				<div class="cambiarModo">
 					<img src="img/switch.png" id="cursorSwitch" onclick="cambiarModo()" id="cursorSwitch" onclick="cambiarModo()">
-					<!-- Switch interactivo
-					<label class="switch" style="text-align: right">
-						<input type="checkbox">
-						 <span class="slider round"></span>
-					</label> -->
 				</div>	
 				<input type="text" id="buscar">
 				<br><br>

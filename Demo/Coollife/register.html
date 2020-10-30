@@ -12,11 +12,11 @@
 	<nav>
 		<img src="img/logo1.png">
 		<ul>
-			<li><a href="">Perfil</a></li>
+			<li><a href="perfil.html">Perfil</a></li>
 			<li><a href="">Cool-location</a></li>
-			<li><a href="">Servicios</a></li>
-			<li><a href="">Lifers</a></li>
-			<li><a href="">Inicio</a></li>
+			<li><a href="comercio.html">Servicios</a></li>
+			<li><a href="lifers.html">Lifers</a></li>
+			<li><a href="principal.html">Inicio</a></li>
 		</ul>
 	</nav>
 	
@@ -32,25 +32,23 @@
 			</p>
 		</div>
 		<div class="register">
-			<!--<form action="?" method="post">-->
+			<form action="registrar.php" method="POST">
 				<h1>Registrarme</h1>
-				
 				<label>Nombre</label><br>
-				<img src="img/name.png"><input type="name" id="r_nombre" name="text" required ><br><br>
+				<img src="img/name.png"><input type="name" id="r_nombre" name="registrarNombre" required ><br><br>
 				<label>Correo electrónico / Lifeid</label><br>
-				<img src="img/email.png"><input type="email" name="email" required id="r_email"><br><br>
+				<img src="img/email.png"><input type="email" name="registrarEmail" required id="r_email"><br><br>
 				<label>Contraseña</label><br>
-				<img src="img/password.png"><input type="password" name="contrasenia" required id="r_contra"><br><br>
+				<img src="img/password.png"><input type="password" name="registrarContrasenia" required id="r_contra"><br><br>
 				<label>Confirmar contraseña</label><br>
-				<img src="img/password.png"><input type="password" name="contrasenia" required id="r_contra2"><br><br>
-				
+				<img src="img/password.png"><input type="password" name="registrarContraseniaConfirmar" required id="r_contra2"><br><br>
 				<div class="captcha">
 					<center><img src="img/captcha.png" class="captcha" id="verificacion" onclick="captchaVer()"><center>
 				</div>
 				<br><br>
-				<button name="registrarse" id="b_registrar" disabled="true" onclick="registrar()">Registrarse</button>
+				<button name="registrarse" type="submit"  id="b_registrar" onclick="registrar()">Registrarse</button>
 				<br><br><br>
-			<!--</form>-->
+			</form>
 			<p>¿Ya estás registrado?</p>
 			<a href="login.html">Inicia sesión aquí</a>
 		</div>

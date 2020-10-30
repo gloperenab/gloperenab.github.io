@@ -155,7 +155,7 @@ nav>img{
 	font-style:italic;
 }
 
-.inicio>img, .register>img{
+.inicio>form>img, .register>form>img{
 	height:30px;
 	position:absolute;
 }
@@ -299,9 +299,35 @@ nav>img{
   background-image: url('../img/buscar.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  width:100%
+  width:100%;
 }
-
+.subContenidoUno h2{
+	display:inline;
+	font-style:italic;
+	margin-right:45%;
+	color: rgb(43, 56, 64);
+}
+.lifers img{
+	width:100px;
+	margin-right:5%;
+}
+.lifers{
+	color: rgb(55,55,55);
+	font-weight:bold;
+}
+.subContenidoUno input{
+  padding: 10px 18px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  padding-left: 42px;
+  background-image: url('../img/buscar.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 40%;
+}
 body {
   overflow-x: hidden;
 }
@@ -564,3 +590,61 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
  
+
+/*------------- Coolocation ---------------*/
+
+.imagenesTop img{
+	height: 20px;
+}
+
+#top{
+	height: 17px;
+	width: 17px;
+}
+
+.imagenesTop{
+	padding-right: 20px;
+	display: inline;
+	align-content: center;
+}
+
+.imagenesTop table tr th{
+	padding-right: 40px;
+}
+
+.seccionUnoCoolocation{
+	padding:30px;
+	width:50%;
+}
+
+.mapa{
+	height: 300px;
+	border: black 3px solid;
+}
+
+.conjuntoComercios{
+	padding-top: 10px;
+	padding-left: 45px;
+	display: flex;
+}
+
+.comercios{
+	padding-right: 100px;
+}
+
+.comercios img{
+	height: 120px;
+	width: 200px;
+}
+
+.comercios h2{
+	font-size: 17px;
+}
+.comercios h3{
+	font-size: 17px;
+	color: rgb(0, 255, 0);
+}
+
+.sideCoolocation{
+	padding-left: 120px;
+}

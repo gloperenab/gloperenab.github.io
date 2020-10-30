@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Principal</title>
+<title>Comercio</title>
 <link rel="stylesheet" type"text/css" href="css/styles.css">
 <link rel="icon" href="img/icono.png" type="image/png">
 
@@ -71,19 +71,68 @@
 				<img src="img/configuracion.png" id="iconosPublicar" title="Configuración de publicación">
 				<img src="img/nubeDescargar.png" id="iconosPublicar" title="Descargar álbum desde la nube">
 				</center>
-				<br><br>
+				
 				<div id="paraPublicar">
 				</div>
+				<p style="border-bottom:1px solid"></p>
 				<br>
+				
+				<div class="subContenidoUno">
+					<h2 style="margin-right:40%">Comercio</h2><input type="text" id="buscar"><br><br>
+					
+					<div style="display:flex">
+				
+						<div class="persona">
+							<img src="img/come1.png"><br>
+							<div class="personaInfo">
+								<font>Simon Baker</font><img src="img/personaUno.png" id="fotoPersona">
+							</div>
+						</div>
+						<div class="persona">
+							<img src="img/come2.png"><br>
+							<div class="personaInfo">
+								<font>Amanda R.</font><img src="img/personaDos.png" id="fotoPersona">
+							</div>
+						</div>
+					</div><br><br><br>
+					
+					<div style="display:flex">
+						<div class="persona">
+							<img src="img/come3.png"><br>
+							<div class="personaInfo">
+								<font>Amy Lee</font><img src="img/personaTres.png" id="fotoPersona">
+							</div>
+						</div>
+						<div class="persona">
+							<img src="img/come4.png"><br>
+							<div class="personaInfo">
+								<font>Tim Kang</font><img src="img/personaCuatro.png" id="fotoPersona">
+							</div>
+						</div>
+					</div><br><br><br>
+					
+					<div style="display:flex">
+						<div class="persona">
+							<img src="img/come5.png"><br>
+							<div class="personaInfo">
+								<font>Bryan Cranston</font><img src="img/personaCinco.png" id="fotoPersona">
+							</div>
+						</div>
+						<div class="persona">
+							<img src="img/come6.png"><br>
+							<div class="personaInfo">
+								<font>Aaron Paul</font><img src="img/personaSeis.png" id="fotoPersona">
+							</div>
+						</div>
+					</div><br><br><br>
+					
+				</div><br><br>
+				
 			</div>
+
 			<div class="seccionDos">
 				<div class="cambiarModo">
 					<img src="img/switch.png" id="cursorSwitch" onclick="cambiarModo()" id="cursorSwitch" onclick="cambiarModo()">
-					<!-- Switch interactivo
-					<label class="switch" style="text-align: right">
-						<input type="checkbox">
-						 <span class="slider round"></span>
-					</label> -->
 				</div>	
 				<input type="text" id="buscar">
 				<br><br>
@@ -121,7 +170,15 @@
 		</div>
 		
 	</main>
-	
+	<script type="text/javascript">
+		function agrandar(alturaAgrandar){
+			var menu=document.getElementById("menuNavegacion");
+			var nuevaAltura=parseInt(menu.clientHeight)+parseInt(alturaAgrandar);
+			var definirAltura=nuevaAltura+"px";
+			menu.style.height = definirAltura;
+		}
+		this.agrandar(345);
+	</script>
 	<aside>
 	</aside>
 	
