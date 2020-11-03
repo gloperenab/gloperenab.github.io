@@ -1,53 +1,65 @@
-function calcularTabla(){
-	var numero=document.getElementById("tabla").value;
-	var resultados = document.getElementById("resultados").value;
-	var errorUno = false;
-	var errorDos= false;
-	
-	if (numero<1||numero>50){
-		document.getElementById("error_tabla").innerHTML="Eliga un numero entre 1 y 50";
-		errorUno=true;
-	}
-	
-	if (resultados<1||resultados>20){
-		document.getElementById("error_resultados").innerHTML="El limite de resultados es entre 1 y 20";
-		errorDos=true;
-	}
-	if(errorUno==false){
+function calcular(){
+	var tablaNumero=document.getElementById("tabla").value;
+	var cantidadResultados = document.getElementById("resultados").value;
+	var errorNumero = false;
+	var errorResultados = false;
+	if (tablaNumero<1||tablaNumero>50){
+		document.getElementById("error_tabla").innerHTML="<font style='color:red'>El número debe ser entre 1 y 50</font>";
+		errorNumero=true;
+	} else {
 		document.getElementById("error_tabla").innerHTML="";
+		errorNumero=false;
 	}
-	if(errorDos==false){
+	
+	if (cantidadResultados<1||cantidadResultados>20){
+		document.getElementById("error_resultados").innerHTML="<font style='color:red'>El número debe ser entre 1 y 20</font>";
+		errorResultados=true;
+	} else {
 		document.getElementById("error_resultados").innerHTML="";
+		errorResultados=false;
 	}
+	var res=document.getElementById("mostrarTabla");
+	res.innerHTML="";
 	
-	var mostrar=document.getElementById("mostrar");
-	mostrar.innerHTML="";
-	
-	if(errorUno==false&&errorDos==false){
-		var contador = 1;
+	if(errorNumero==false&&errorResultados==false){
+		var i = 1;
 		
 		var tabla = document.createElement("table");
-		tabla.setAttribute("border","1");
+		tabla.setAttribute("border","1px solid");
+		var fil = document.createElement("tr");
 		
-		while(contador<=resultados){
-			
-			var fila = document.createElement("tr");
+		var col1 = document.createElement("th");
+		col1.innerText="Numero";
+		var col2 = document.createElement("th");
+		col2.innerText="Multiplicador";
+		var col3 = document.createElement("th");
+		col3.innerText="Resultado";
 		
-			var columna1 = document.createElement("td");
-			columna1.innerText=numero;
-			var columna2 = document.createElement("td");
-			columna2.innerText=contador;
-			var columna3 = document.createElement("td");
-			columna3.innerText=numero*contador;
+		fil.appendChild(col1);
+		fil.appendChild(col2);
+		fil.appendChild(col3);
+		
+		tabla.appendChild(fil);
+		
+		while(i<=cantidadResultados){
 			
-			fila.appendChild(columna1);
-			fila.appendChild(columna2);
-			fila.appendChild(columna3);
+			var fil = document.createElement("tr");
+		
+			var col1 = document.createElement("td");
+			col1.innerText=tablaNumero;
+			var col2 = document.createElement("td");
+			col2.innerText=i;
+			var col3 = document.createElement("td");
+			col3.innerText=(tablaNumero*i);
 			
-			tabla.appendChild(fila);
+			fil.appendChild(col1);
+			fil.appendChild(col2);
+			fil.appendChild(col3);
 			
-			contador++;
+			tabla.appendChild(fil);
+			
+			i++;
 		}
-		mostrar.appendChild(tabla);
+		res.appendChild(tabla);
 	}
 }
