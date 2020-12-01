@@ -1,3 +1,6 @@
+<?php
+    require('abre_sesion.php');
+?>
 <!Doctype html>
 <html>
 <head>
@@ -8,36 +11,9 @@
 	
 </head>
 <body>
+<!--<body  oncontextmenu="return false" onkeydown="return false">-->
 	<div class="contenido">
-		<header>
-			<img src="images/ralogo_monogram.png">
-			<p>
-				Roux Academy<br>
-				Art * Media * Design
-			</p>
-			<div class="cabecera">
-				<h1>Roux Academy 2016 Art Conference</h1>
-				<p>
-					Join over 500 hundred of the most creative and brilliant minds of 
-					art colleges all around the world for five days of lectures by 
-					world-renowned art scholars and artists, and seven days and 
-					nights of gallery exhibits featuring the best in contemporary art,
-					including painting, sculpture, and more, in the beautiful halls of Hotel 
-					Contempo in the heart of Seattle.
-				</p>
-			</div>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="artists.html">artists</a></li>
-				<li><a href="schedule.html">schedule</a></li>
-				<li><a href="venue.html">venue/travel</a></li>
-				<li><a href="register.html">register</a></li>
-			</ul>
-		</nav>
-		<img src="images/art01.jpg" style="margin-bottom:-5px">
-		<!-- fin header nav e imagen -->
+		<?php require("header.php"); ?>
 		
 		<div class="principal">
 			<main>
@@ -49,7 +25,9 @@
 						attendees. It is truly an honor to be a CAC Featured Artist and many 
 						past students artists who were featured at CAC have gone on to brilliant 
 						careers in art.
-						<div class="artistas">
+						<div class="artistas" id="artistas">
+							
+						<!--
 							<h3>Barot Bellingham</h3>
 							<p>
 								<img src="images/artists/Barot_Bellingham_tn.jpg">
@@ -135,7 +113,9 @@
 								 of microscope images on canvas. Xhou will discuss the art 
 								and science behind his incredibly detailed works of art.
 							</p>
+							-->
 						</div>
+						<script type="text/javascript" src="script.js"></script>
 					</p>
 					
 				</section>
@@ -175,20 +155,7 @@
 			</aside>
 		</div><!-- fin div principal -->
 		
-		<footer>
-			<img src="images/ralogo_monogram.png">
-			<p>
-				Join over 500 hundred of the most creative and brilliant minds of art colleges all 
-				around the world for three days of lectures by world-renowned art scholars and artists.
-			</p>
-			<div>
-				<ul>
-					<li style="border-right: 1px solid"><a href="about.html">About the Roux Academy</a></li>
-					<li style="border-right: 1px solid"><a href="policy.html">Privacy Policy</a></li>
-					<li><a href="index.html">Visit our web site</a></li>
-				</ul>
-			</div><!-- fin enlaces footer -->
-		</footer>
+		<?php require("footer.php"); ?>
 	</div><!-- fin div contenido -->
 </body>
 </head>
